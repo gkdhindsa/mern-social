@@ -14,19 +14,25 @@ const isActive = (history, path) => {
   else
     return {color: '#ffffff'}
 }
+const marginLeft=(history, path)=>{
+  if (history.location.pathname == path)
+    return {marginLeft: 'auto'}
+  else
+    return {marginLeft: 'auto'}
+}
 const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">
-        MERN Social
+        ReviewIt
       </Typography>
-      <Link to="/">
-        <IconButton aria-label="Home" style={isActive(history, "/")}>
+      <Link to="/" style={marginLeft(history, '/')}>
+        <IconButton aria-label="Home" style={isActive(history, "/")} >
           <HomeIcon/>
         </IconButton>
       </Link>
       {
-        !auth.isAuthenticated() && (<span>
+        !auth.isAuthenticated() && (<span style={{marginLeft: 'auto'}}>
           <Link to="/signup">
             <Button style={isActive(history, "/signup")}>Sign up
             </Button>

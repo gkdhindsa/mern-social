@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth:600,
     margin: 'auto',
     marginBottom: theme.spacing(3),
-    backgroundColor: 'rgba(65, 150, 136, 0.09)',
+    backgroundColor: 'rgba(206,227,151,20)',
     boxShadow: 'none'
   },
   cardContent: {
@@ -102,8 +102,9 @@ export default function NewPost (props){
             className={classes.cardHeader}
           />
       <CardContent className={classes.cardContent}>
+      
         <TextField
-            placeholder="Share your thoughts ..."
+            placeholder="Enter your views here..."
             multiline
             rows="3"
             value={values.text}
