@@ -24,7 +24,7 @@ const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">
-        ReviewIt
+        ConnectPlus
       </Typography>
       <Link to="/" style={marginLeft(history, '/')}>
         <IconButton aria-label="Home" style={isActive(history, "/")} >

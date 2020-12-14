@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import unicornbikeImg from './../assets/images/background.png'
+import unicornbikeImg from './../assets/images/cp.jpg'
 import Grid from '@material-ui/core/Grid'
 import auth from './../auth/auth-helper'
 import FindPeople from './../user/FindPeople'
@@ -68,7 +68,7 @@ export default function Home({history}){
                 <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
                 <CardContent>
                   <Typography type="body1" component="p" className={classes.p}>
-                    Welcome to the reviews Website! 
+                    Welcome to your social website! 
                   </Typography>
                 </CardContent>
               </Card>
